@@ -23,7 +23,7 @@ export default function Home() {
   //Fetch users when the component mounts
   useEffect(() => {
     const fetchUsers = async () => {
-      const response = await fetch("http://localhost:4001/users");
+      const response = await fetch("http://18.205.24.210:4001/users");
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -62,7 +62,7 @@ export default function Home() {
 
     try {
       // Send POST request to the backend
-      const response = await fetch("http://localhost:4001/user", {
+      const response = await fetch("http://18.205.24.210:4001/user", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
