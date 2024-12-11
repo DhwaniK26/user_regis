@@ -8,11 +8,7 @@ const PORT = 4001
 
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors({
-    origin: 'http://localhost:3000', // Your Next.js app's URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-  }));
+app.use(cors());
 
 // const pool = new Pool({
 //   user: "postgres",

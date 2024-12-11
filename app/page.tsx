@@ -74,7 +74,7 @@ export default function Home() {
       console.log("User added:", data);
 
       // Refetch users after adding a new user
-      const usersResponse = await fetch("http://localhost:4001/users");
+      const usersResponse = await fetch("http://18.205.24.210:4001/users");
       const usersData = await usersResponse.json();
 
       // Validate and filter users
